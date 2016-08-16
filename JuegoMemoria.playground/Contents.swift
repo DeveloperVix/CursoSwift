@@ -13,15 +13,14 @@ for i in rango{
 
 for i in rango{
     
-    let residuo = i % 5
-    if residuo == 0 && i != 0{
+    if i % 5 == 0 && i != 0{
         print("\(i)\t Bingo!")
     }
 }
 
 for i in rango{
     
-    if i % 2 == 0 && i != 0{
+    if i % 2 == 0{
         print("\(i)\t par")
     }else if i != 0{
         print("\(i)\t impar")
