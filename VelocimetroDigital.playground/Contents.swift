@@ -20,12 +20,10 @@ class Auto{
     func  cambioDeVelocidad() -> (actual : Int, velocidadEnCadena : String) {
         if(velocidad == .Apagado){
             velocidad = .VelocidadBaja
-        }else if(velocidad == .VelocidadBaja){
+        }else if(velocidad == .VelocidadBaja || velocidad == .VelocidadAlta){
             velocidad = .VelocidadMedia
         }else if(velocidad == .VelocidadMedia){
             velocidad = .VelocidadAlta
-        }else if(velocidad == .VelocidadAlta){
-            velocidad = .VelocidadMedia
         }
         
         return(velocidad.rawValue, String(velocidad))
